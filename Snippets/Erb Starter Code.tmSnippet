@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>require 'erb'
+
+@words = ["uno", "dos", "tres"]
+
+template = &lt;&lt;TEMPLATE
+&lt;%- @words.each do |w| -%&gt;
+  &lt;%= w %&gt;
+&lt;%- end -%&gt;
+TEMPLATE
+
+puts ERB.new(template, nil, '-').result(binding)</string>
+	<key>name</key>
+	<string>Erb Starter Code</string>
+	<key>tabTrigger</key>
+	<string>erb</string>
+	<key>uuid</key>
+	<string>085622F8-EB7D-41CF-9C41-AA2229D08FC0</string>
+</dict>
+</plist>

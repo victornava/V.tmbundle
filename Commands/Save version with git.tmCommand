@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>saveModifiedFiles</string>
+	<key>command</key>
+	<string>#!/usr/bin/env bash
+
+pwd
+cd $TM_PROJECT_DIRECTORY
+pwd
+git add .
+git commit -m "Auto save"
+
+</string>
+	<key>input</key>
+	<string>none</string>
+	<key>inputFormat</key>
+	<string>text</string>
+	<key>keyEquivalent</key>
+	<string>^~@s</string>
+	<key>name</key>
+	<string>Save version with git</string>
+	<key>outputCaret</key>
+	<string>heuristic</string>
+	<key>outputFormat</key>
+	<string>text</string>
+	<key>outputLocation</key>
+	<string>toolTip</string>
+	<key>uuid</key>
+	<string>C9CE9D75-5DD9-42BF-896B-FB5030F88CF9</string>
+	<key>version</key>
+	<integer>2</integer>
+</dict>
+</plist>

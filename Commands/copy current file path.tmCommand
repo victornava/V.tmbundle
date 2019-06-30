@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env bash
+
+FILEPATH=${TM_FILEPATH/#$TM_PROJECT_DIRECTORY\//}
+echo -n "$FILEPATH" | pbcopy &amp;&amp; echo "Path copied: $FILEPATH"
+</string>
+	<key>input</key>
+	<string>none</string>
+	<key>inputFormat</key>
+	<string>text</string>
+	<key>keyEquivalent</key>
+	<string>^@p</string>
+	<key>name</key>
+	<string>copy current file path</string>
+	<key>outputCaret</key>
+	<string>afterOutput</string>
+	<key>outputFormat</key>
+	<string>text</string>
+	<key>outputLocation</key>
+	<string>toolTip</string>
+	<key>uuid</key>
+	<string>FBDC469F-AF02-4408-82B1-4A2AC67EE9F9</string>
+	<key>version</key>
+	<integer>2</integer>
+</dict>
+</plist>

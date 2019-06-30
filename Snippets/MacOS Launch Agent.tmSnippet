@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"&gt;
+&lt;plist version="1.0"&gt;
+&lt;dict&gt;
+    &lt;key&gt;Label&lt;/key&gt;
+    &lt;string&gt;v.{{name}}&lt;/string&gt;
+    &lt;key&gt;ProgramArguments&lt;/key&gt;
+    &lt;array&gt;
+        &lt;string&gt;{{full_path_to_program}}&lt;/string&gt;
+        &lt;string&gt;{{argument1}}&lt;/string&gt;
+        &lt;string&gt;{{argument2}}&lt;/string&gt;
+    &lt;/array&gt;
+    &lt;key&gt;KeepAlive&lt;/key&gt;
+    &lt;true/&gt;
+&lt;/dict&gt;
+&lt;/plist&gt;
+
+&lt;!-- 
+  Move the file to ~/Library/LaunchAgents so that it starts at login
+
+  Test with:
+  launchctl load v.example.plist
+  launchctl unload v.example.plist
+  launchctl list | grep 'v.example.plist
+--&gt;</string>
+	<key>name</key>
+	<string>macOS Launch Agent</string>
+	<key>uuid</key>
+	<string>DCCB83CA-E274-4912-B42C-AFAC359ED420</string>
+</dict>
+</plist>

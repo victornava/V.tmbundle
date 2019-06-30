@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>autoScrollOutput</key>
+	<true/>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby18 -wKU
+
+out = STDIN.each_line.map { |l| Float(l) }.reduce(0, &amp;:+)
+
+`echo #{out} | pbcopy`
+
+puts out
+</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>inputFormat</key>
+	<string>text</string>
+	<key>keyEquivalent</key>
+	<string>^@s</string>
+	<key>name</key>
+	<string>sum</string>
+	<key>outputCaret</key>
+	<string>afterOutput</string>
+	<key>outputFormat</key>
+	<string>text</string>
+	<key>outputLocation</key>
+	<string>afterInput</string>
+	<key>scope</key>
+	<string>*</string>
+	<key>uuid</key>
+	<string>52B586CE-1744-4269-AED7-B5141F6C8578</string>
+	<key>version</key>
+	<integer>2</integer>
+</dict>
+</plist>

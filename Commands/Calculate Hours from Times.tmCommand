@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby -wKU
+require 'time'
+
+# input: 2016-06-03    9:30 AM     12:50 PM
+# Columns should be separated by at least 4 spaces
+
+date, time_from, time_to, *_ = STDIN.read.split(/\s{4,}/)
+
+print ((Time.parse(time_to) - Time.parse(time_from)) / 3600).round(2)
+</string>
+	<key>input</key>
+	<string>line</string>
+	<key>inputFormat</key>
+	<string>text</string>
+	<key>keyEquivalent</key>
+	<string>^~@c</string>
+	<key>name</key>
+	<string>Calculate Hours from Times</string>
+	<key>outputCaret</key>
+	<string>afterOutput</string>
+	<key>outputFormat</key>
+	<string>text</string>
+	<key>outputLocation</key>
+	<string>afterInput</string>
+	<key>scope</key>
+	<string>*</string>
+	<key>uuid</key>
+	<string>D2B1D7C3-DDDA-4146-8DB8-4E68B3C5BB9D</string>
+	<key>version</key>
+	<integer>2</integer>
+</dict>
+</plist>

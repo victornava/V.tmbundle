@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>require 'minitest/spec'
+require 'minitest/autorun'
+require './the_thing.rb'
+
+describe 'The thing' do
+  it "Just works™" do
+    assert_equal TheThing.run, "It ran"
+  end
+end</string>
+	<key>name</key>
+	<string>Ruby Test Spec</string>
+	<key>scope</key>
+	<string>source.ruby</string>
+	<key>tabTrigger</key>
+	<string>test</string>
+	<key>uuid</key>
+	<string>205711FF-BE6C-45A1-B758-0296D85EEA06</string>
+</dict>
+</plist>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string># Show all variables declared in a giving context (binding)
+# Usage:
+#   show_variables(binding)
+
+def show_variables(_binding)
+  _binding.local_variables.each do |var|
+    puts [ var, ": ", _binding.local_variable_get(var) ].join
+  end
+end</string>
+	<key>name</key>
+	<string>Ruby show variables</string>
+	<key>scope</key>
+	<string>source.ruby</string>
+	<key>uuid</key>
+	<string>A0D30D28-3C7D-452A-AC0A-DD5C17A641F9</string>
+</dict>
+</plist>

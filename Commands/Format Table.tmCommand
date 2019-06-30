@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby
+
+require 'csv'
+
+def format_table(csv, separator='|')
+  rows = CSV.parse(csv, col_sep: separator)
+  
+  max_col_widths = rows.first.size.times.map do |i|
+    rows.map { |row| row[i].strip.size }.max
+  end
+
+  formatter = max_col_widths.map { |w| "%-#{w}s" }.join(" #{separator} ")
+
+  rows.map { |row| formatter % row.map(&amp;:strip) }.join("\n")
+end
+
+puts format_table(STDIN.read)
+</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>inputFormat</key>
+	<string>text</string>
+	<key>name</key>
+	<string>Format Table</string>
+	<key>outputCaret</key>
+	<string>afterOutput</string>
+	<key>outputFormat</key>
+	<string>text</string>
+	<key>outputLocation</key>
+	<string>replaceInput</string>
+	<key>uuid</key>
+	<string>9F972816-E9C6-4AE4-86B2-5BCC0F3F42C1</string>
+	<key>version</key>
+	<integer>2</integer>
+</dict>
+</plist>

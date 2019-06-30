@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>/* OLD SCHOOL */
+
+/* source: https://css-tricks.com/centering-css-complete-guide/*/
+
+/* Align Y */
+
+.parent {
+  position: relative;
+}
+
+.child {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+/* Align both X and Y */
+
+.parent {
+  position: relative;
+}
+.child {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}</string>
+	<key>name</key>
+	<string>CSS Align (old)</string>
+	<key>scope</key>
+	<string>source.css</string>
+	<key>tabTrigger</key>
+	<string>align</string>
+	<key>uuid</key>
+	<string>1E1A950E-7CD8-4BCF-B168-3B800F66262D</string>
+</dict>
+</plist>

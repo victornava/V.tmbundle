@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>[sourcecode lang="${1}"]
+  
+  ${2}
+  
+[/sourcecode]
+
+
+</string>
+	<key>name</key>
+	<string>Wordpress Code Block</string>
+	<key>tabTrigger</key>
+	<string>wpc</string>
+	<key>uuid</key>
+	<string>8B881EFE-1210-4C58-AA18-71C4ED7E1C08</string>
+</dict>
+</plist>

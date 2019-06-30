@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>/* From http://getbootstrap.com/css/ */
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px)  { }
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px)  { }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { }
+</string>
+	<key>name</key>
+	<string>CSS Media Queries</string>
+	<key>scope</key>
+	<string>source.css</string>
+	<key>tabTrigger</key>
+	<string>css</string>
+	<key>uuid</key>
+	<string>713D7BD3-FA75-4BA6-B570-988AD2878DB0</string>
+</dict>
+</plist>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>def test(output, input, target)
+  puts
+  puts "input: #{input.inspect}"
+  puts "target: #{target}"
+  puts "output: #{output}"
+  puts "pass: #{output == target ? '✅' : '❌'}"
+end</string>
+	<key>name</key>
+	<string>Ruby Test Simple</string>
+	<key>scope</key>
+	<string>source.ruby</string>
+	<key>tabTrigger</key>
+	<string>test</string>
+	<key>uuid</key>
+	<string>75091793-FC7E-49D8-9572-C685500D3C3E</string>
+</dict>
+</plist>

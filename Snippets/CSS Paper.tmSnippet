@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>* {
+  color: inherit;
+  background-color: inherit;
+}
+
+body {
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2em;
+  max-width: 40em;
+  opacity: 0.9;
+  font-family: sans-serif;
+  line-height: 1.6;
+}
+
+.white-paper {
+  color: black;
+  background-color: white;
+}
+
+.black-paper {
+  color: white;
+  background-color: black;
+}
+</string>
+	<key>name</key>
+	<string>CSS Paper</string>
+	<key>scope</key>
+	<string>source.css</string>
+	<key>tabTrigger</key>
+	<string>css</string>
+	<key>uuid</key>
+	<string>5A4B90A5-DE24-482E-872C-93388E8A87F7</string>
+</dict>
+</plist>

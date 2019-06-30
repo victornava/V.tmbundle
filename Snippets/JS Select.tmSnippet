@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>$ = function(selector, element) {
+  const subject = (typeof element === 'object') ? element : document);
+  return Array.from(subject.querySelectorAll(selector));
+}
+</string>
+	<key>name</key>
+	<string>JS Select</string>
+	<key>scope</key>
+	<string>source.js</string>
+	<key>tabTrigger</key>
+	<string>$</string>
+	<key>uuid</key>
+	<string>09B07A6E-5A56-4844-9576-02D2D088050C</string>
+</dict>
+</plist>

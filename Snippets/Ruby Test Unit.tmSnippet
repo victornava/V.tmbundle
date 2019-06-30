@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>require 'test/unit'
+
+class SubjectTest &lt; Test::Unit::TestCase
+  def test_the_thing
+    target  = 
+    subject =
+    assert_equal target, subject
+  end
+end</string>
+	<key>name</key>
+	<string>Ruby Test Unit</string>
+	<key>scope</key>
+	<string>source.ruby</string>
+	<key>tabTrigger</key>
+	<string>test</string>
+	<key>uuid</key>
+	<string>0C5CE8DF-CD96-414F-BE73-BE0B1AC2C9F8</string>
+</dict>
+</plist>

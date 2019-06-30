@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby
+head, *tail = STDIN.read.split(/[^[[:alnum:]]]+/)
+
+if head &amp;&amp; tail
+  print ([head.capitalize] &lt;&lt; tail).join(' ') 
+end
+</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>keyEquivalent</key>
+	<string>^~@h</string>
+	<key>name</key>
+	<string>humanize</string>
+	<key>uuid</key>
+	<string>3CD9E340-2A48-4AEB-B413-FBDA97973F71</string>
+</dict>
+</plist>
