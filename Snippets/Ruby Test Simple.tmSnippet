@@ -3,13 +3,15 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>def test(output, input, target)
-  puts
-  puts "input: #{input.inspect}"
+	<string>def test(meth, args, target)
+  output = meth.call(*args)
+  puts "input: #{args.inspect}"
   puts "target: #{target}"
   puts "output: #{output}"
   puts "pass: #{output == target ? '✅' : '❌'}"
-end</string>
+end
+
+test method(:foo), ['arg1', 'arg2'], 'bar'</string>
 	<key>name</key>
 	<string>Ruby Test Simple</string>
 	<key>scope</key>
