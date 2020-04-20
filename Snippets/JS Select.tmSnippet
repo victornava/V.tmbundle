@@ -4,10 +4,9 @@
 <dict>
 	<key>content</key>
 	<string>$ = function(selector, element) {
-  const subject = (typeof element === 'object') ? element : document);
-  return Array.from(subject.querySelectorAll(selector));
-}
-</string>
+  const target = (typeof element === 'object') ? element : document;
+  return Array.from(target.querySelectorAll(selector));
+}</string>
 	<key>name</key>
 	<string>JS Select</string>
 	<key>scope</key>
