@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>require "irb"; binding.irb</string>
+	<key>name</key>
+	<string>Irb</string>
+	<key>scope</key>
+	<string>source.ruby</string>
+	<key>tabTrigger</key>
+	<string>irb</string>
+	<key>uuid</key>
+	<string>1E4EF067-8C59-4A97-833D-7BAEF85C5CEA</string>
+</dict>
+</plist>

@@ -3,12 +3,12 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>🦆</string>
+	<string>⚠️</string>
 	<key>name</key>
-	<string>duck</string>
+	<string>Emoji Warning</string>
 	<key>tabTrigger</key>
-	<string>duck</string>
+	<string>warn</string>
 	<key>uuid</key>
-	<string>FB217210-5A46-4AD9-9120-D75465C9E0CD</string>
+	<string>238CA2FC-E95E-4C7E-94DF-9584C1E540F7</string>
 </dict>
 </plist>
