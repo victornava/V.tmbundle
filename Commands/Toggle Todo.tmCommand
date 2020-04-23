@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby18 -wKU
+
+def toogle_todo(line)
+  checked   = '- [x]'
+  unchecked = '- [ ]'
+
+  if line.strip.start_with?(unchecked)
+    line.sub(unchecked, checked)
+  elsif line.strip.start_with?(checked)
+    line.sub(checked, unchecked)
+  else
+    line
+  end
+end
+
+print toogle_todo(STDIN.read)
+</string>
+	<key>input</key>
+	<string>line</string>
+	<key>inputFormat</key>
+	<string>text</string>
+	<key>keyEquivalent</key>
+	<string>^~@t</string>
+	<key>name</key>
+	<string>Todo Toggle</string>
+	<key>outputCaret</key>
+	<string>interpolateByChar</string>
+	<key>outputFormat</key>
+	<string>text</string>
+	<key>outputLocation</key>
+	<string>replaceInput</string>
+	<key>uuid</key>
+	<string>C0E4B455-E9F9-482C-917E-359E52092FDF</string>
+	<key>version</key>
+	<integer>2</integer>
+</dict>
+</plist>
