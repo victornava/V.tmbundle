@@ -13,8 +13,6 @@ require '~/dev/timesheet/visualize.rb'
 	<string>document</string>
 	<key>inputFormat</key>
 	<string>text</string>
-	<key>keyEquivalent</key>
-	<string>^~@v</string>
 	<key>name</key>
 	<string>Visualize timesheet</string>
 	<key>outputCaret</key>
