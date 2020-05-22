@@ -21,7 +21,7 @@ git commit -m "Auto save"
 	<key>keyEquivalent</key>
 	<string>^~@s</string>
 	<key>name</key>
-	<string>Save version with git</string>
+	<string>Git save</string>
 	<key>outputCaret</key>
 	<string>heuristic</string>
 	<key>outputFormat</key>

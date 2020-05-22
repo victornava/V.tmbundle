@@ -6,6 +6,8 @@
 	<array>
 		<string>md</string>
 	</array>
+	<key>keyEquivalent</key>
+	<string>^~M</string>
 	<key>name</key>
 	<string>Markdown Minimal</string>
 	<key>patterns</key>
@@ -21,10 +23,6 @@
 		<dict>
 			<key>patterns</key>
 			<array>
-				<dict>
-					<key>include</key>
-					<string>#separator</string>
-				</dict>
 				<dict>
 					<key>include</key>
 					<string>#heading</string>
@@ -78,10 +76,8 @@
 				</dict>
 				<key>bold</key>
 				<dict>
-					<key>begin</key>
-					<string>\*\*\S</string>
-					<key>end</key>
-					<string>\*\*</string>
+					<key>match</key>
+					<string>\*\*\S*\*\*</string>
 					<key>name</key>
 					<string>markup.bold.markdown</string>
 				</dict>
@@ -96,10 +92,8 @@
 				</dict>
 				<key>italics</key>
 				<dict>
-					<key>begin</key>
-					<string>\_\S</string>
-					<key>end</key>
-					<string>\S\_</string>
+					<key>match</key>
+					<string>(^|\s)_\S*_(\s|$)</string>
 					<key>name</key>
 					<string>markup.italic.markdown</string>
 				</dict>
@@ -123,7 +117,7 @@
 		</dict>
 	</dict>
 	<key>scopeName</key>
-	<string>text.html.markdown</string>
+	<string>text.markdown</string>
 	<key>uuid</key>
 	<string>24E9F731-B821-4429-8F6A-F4E95699B99A</string>
 </dict>
