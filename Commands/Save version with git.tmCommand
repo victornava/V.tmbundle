@@ -7,6 +7,7 @@
 	<key>command</key>
 	<string>#!/usr/bin/env bash
 
+# TODO Save only if there are changes
 pwd
 cd $TM_PROJECT_DIRECTORY
 pwd
@@ -19,7 +20,7 @@ git commit -m "Auto save"
 	<key>inputFormat</key>
 	<string>text</string>
 	<key>keyEquivalent</key>
-	<string>^~@s</string>
+	<string>^@s</string>
 	<key>name</key>
 	<string>Git save</string>
 	<key>outputCaret</key>

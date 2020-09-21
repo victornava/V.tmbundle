@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>command</key>
+	<string>#!/usr/bin/env bash
+
+cat _v/temp
+</string>
+	<key>keyEquivalent</key>
+	<string>^@v</string>
+	<key>name</key>
+	<string>untitled</string>
+	<key>uuid</key>
+	<string>46F55EDE-60DC-4A07-A6FF-42421EEB66AA</string>
+</dict>
+</plist>

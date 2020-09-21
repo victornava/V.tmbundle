@@ -20,7 +20,7 @@ puts out
 	<key>inputFormat</key>
 	<string>text</string>
 	<key>keyEquivalent</key>
-	<string>^@s</string>
+	<string>^~@s</string>
 	<key>name</key>
 	<string>sum</string>
 	<key>outputCaret</key>
